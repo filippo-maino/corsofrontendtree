@@ -1,0 +1,105 @@
+/**********ABOVE THE FOLDER
+***********/
+:root {
+    --my-blue: #3cb7f2;
+}
+
+.header-top{
+    text-decoration: whitesmoke;
+    background-color: var(--my-blue);
+}
+.header-bottom>div{
+    color: var(--my-blue);
+}
+.bg{
+    background-image: url("https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg"); 
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+section i{
+    color: white;}
+section .card i{
+    color: #0E2E5D;
+}
+
+.bg h1{
+    text-shadow:10px 2px 4px whitesmoke;
+    color: white;
+    text-shadow: 0 0 1px var(--my-blue), 0 0 1px var(--my-blue), 0 0 1px var(--my-blue), 0 0 1px var(--my-blue);
+
+}
+
+.text-border{
+    text-shadow: 0 0 1px var(--my-blue), 0 0 1px var(--my-blue), 0 0 1px var(--my-blue), 0 0 1px var(--my-blue);
+}
+
+#line{
+    height: 1px;
+    width: 50px;
+}
+.my-text{
+    font-size: 23px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/************RECOMMENDED SECTION
+************/
+
+.recommended_title{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;    
+}
+.recommended_title::after{
+    /*come se inserissimo un div poco prima della chiusura di questo tag*/
+    display: block;
+    width: 80px;
+    height: 2;
+    background: #3cb7f2;
+    bottom: 5px;
+}
+.circle{
+    width: 36px;
+    height: 36px;
+    border: 2px solid #0E2E5D;
+    text-align: center;/*mi allinea il testo che in questo caso è l'aereo, preso come testo*/
+    /*essendo un testo posso usare l'interlinea per centrarlo verticalmente*/
+    
+    line-height: 32px !important;
+    border-radius: 50%;
+}
+
+.cookie-banner{
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+}
+/*****************MEDIA QUERIES
+*****************/
+@media only screen and (max-width: 660px) {
+    .bg {
+        background-image: url("https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg"); 
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+        height:70vw;
+}}
+
+@media only screen and (max-width: 660px) {
+    .display-sm-5 {
+        font-size: 7vh;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .hide {
+        display: none;
+    }
+}   
